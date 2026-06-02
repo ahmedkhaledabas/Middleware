@@ -1,5 +1,7 @@
 using MiddlewareCenter.Application.Interfaces;
 using MiddlewareCenter.Infrastructure.Clients;
+using MiddlewareCenter.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -13,6 +15,33 @@ public static class InfrastructureServiceExtensions
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
+        // ── EF Core DbContext ─────────────────────────────────────────────────
+        var connectionString = configuration.GetConnectionString("DefaultConnection");
+
+        if (!string.IsNullOrWhiteSpace(connectionString) &&
+            !connectionString.Contains("YOUR_SERVER", StringComparison.OrdinalIgnoreCase))
+        {
+            services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(connectionString, sqlOptions =>
+                {
+                    sqlOptions.EnableRetryOnFailure(
+                        maxRetryCount: 3,
+                        maxRetryDelay: TimeSpan.FromSeconds(5),
+                        errorNumbersToAdd: null);
+                    sqlOptions.CommandTimeout(30);
+                }));
+        }
+        else
+        {
+            // Fallback to in-memory for local dev / CI without a real SQL Server
+            services.AddDbContext<AppDbContext>(options =>
+                options.UseInMemoryDatabase("MiddlewareCenterDev"));
+        }
+
+        // ── Repository ────────────────────────────────────────────────────────
+        services.AddScoped<IRequestLogRepository, RequestLogRepository>();
+
+        // ── External API Clients ──────────────────────────────────────────────
         // Register named HttpClients and their typed API clients
         RegisterApiClient<ICourseraApiClient, CourseraApiClient>(
             services, configuration, "ExternalApis:Coursera:BaseUrl", "Coursera");
