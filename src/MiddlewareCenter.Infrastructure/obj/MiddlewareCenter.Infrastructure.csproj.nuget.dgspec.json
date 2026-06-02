@@ -1,0 +1,202 @@
+{
+  "format": 1,
+  "restore": {
+    "/vercel/sandbox/src/MiddlewareCenter.Infrastructure/MiddlewareCenter.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/vercel/sandbox/src/MiddlewareCenter.Application/MiddlewareCenter.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/vercel/sandbox/src/MiddlewareCenter.Application/MiddlewareCenter.Application.csproj",
+        "projectName": "MiddlewareCenter.Application",
+        "projectPath": "/vercel/sandbox/src/MiddlewareCenter.Application/MiddlewareCenter.Application.csproj",
+        "packagesPath": "/home/vercel-sandbox/.nuget/packages/",
+        "outputPath": "/vercel/sandbox/src/MiddlewareCenter.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/vercel-sandbox/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/vercel/sandbox/src/MiddlewareCenter.Domain/MiddlewareCenter.Domain.csproj": {
+                "projectPath": "/vercel/sandbox/src/MiddlewareCenter.Domain/MiddlewareCenter.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.126/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/vercel/sandbox/src/MiddlewareCenter.Domain/MiddlewareCenter.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/vercel/sandbox/src/MiddlewareCenter.Domain/MiddlewareCenter.Domain.csproj",
+        "projectName": "MiddlewareCenter.Domain",
+        "projectPath": "/vercel/sandbox/src/MiddlewareCenter.Domain/MiddlewareCenter.Domain.csproj",
+        "packagesPath": "/home/vercel-sandbox/.nuget/packages/",
+        "outputPath": "/vercel/sandbox/src/MiddlewareCenter.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/vercel-sandbox/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.126/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/vercel/sandbox/src/MiddlewareCenter.Infrastructure/MiddlewareCenter.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/vercel/sandbox/src/MiddlewareCenter.Infrastructure/MiddlewareCenter.Infrastructure.csproj",
+        "projectName": "MiddlewareCenter.Infrastructure",
+        "projectPath": "/vercel/sandbox/src/MiddlewareCenter.Infrastructure/MiddlewareCenter.Infrastructure.csproj",
+        "packagesPath": "/home/vercel-sandbox/.nuget/packages/",
+        "outputPath": "/vercel/sandbox/src/MiddlewareCenter.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/vercel-sandbox/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/vercel/sandbox/src/MiddlewareCenter.Application/MiddlewareCenter.Application.csproj": {
+                "projectPath": "/vercel/sandbox/src/MiddlewareCenter.Application/MiddlewareCenter.Application.csproj"
+              },
+              "/vercel/sandbox/src/MiddlewareCenter.Domain/MiddlewareCenter.Domain.csproj": {
+                "projectPath": "/vercel/sandbox/src/MiddlewareCenter.Domain/MiddlewareCenter.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.*, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.126/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

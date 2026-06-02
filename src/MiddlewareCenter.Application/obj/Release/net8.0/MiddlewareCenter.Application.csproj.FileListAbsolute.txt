@@ -1,0 +1,15 @@
+/vercel/sandbox/src/MiddlewareCenter.Application/bin/Release/net8.0/MiddlewareCenter.Application.deps.json
+/vercel/sandbox/src/MiddlewareCenter.Application/bin/Release/net8.0/MiddlewareCenter.Application.dll
+/vercel/sandbox/src/MiddlewareCenter.Application/bin/Release/net8.0/MiddlewareCenter.Application.pdb
+/vercel/sandbox/src/MiddlewareCenter.Application/bin/Release/net8.0/MiddlewareCenter.Domain.dll
+/vercel/sandbox/src/MiddlewareCenter.Application/bin/Release/net8.0/MiddlewareCenter.Domain.pdb
+/vercel/sandbox/src/MiddlewareCenter.Application/obj/Release/net8.0/MiddlewareCenter.Application.csproj.AssemblyReference.cache
+/vercel/sandbox/src/MiddlewareCenter.Application/obj/Release/net8.0/MiddlewareCenter.Application.GeneratedMSBuildEditorConfig.editorconfig
+/vercel/sandbox/src/MiddlewareCenter.Application/obj/Release/net8.0/MiddlewareCenter.Application.AssemblyInfoInputs.cache
+/vercel/sandbox/src/MiddlewareCenter.Application/obj/Release/net8.0/MiddlewareCenter.Application.AssemblyInfo.cs
+/vercel/sandbox/src/MiddlewareCenter.Application/obj/Release/net8.0/MiddlewareCenter.Application.csproj.CoreCompileInputs.cache
+/vercel/sandbox/src/MiddlewareCenter.Application/obj/Release/net8.0/MiddlewareCenter.Application.csproj.CopyComplete
+/vercel/sandbox/src/MiddlewareCenter.Application/obj/Release/net8.0/MiddlewareCenter.Application.dll
+/vercel/sandbox/src/MiddlewareCenter.Application/obj/Release/net8.0/refint/MiddlewareCenter.Application.dll
+/vercel/sandbox/src/MiddlewareCenter.Application/obj/Release/net8.0/MiddlewareCenter.Application.pdb
+/vercel/sandbox/src/MiddlewareCenter.Application/obj/Release/net8.0/ref/MiddlewareCenter.Application.dll

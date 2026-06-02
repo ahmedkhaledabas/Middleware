@@ -1,0 +1,11 @@
+/vercel/sandbox/src/MiddlewareCenter.Domain/bin/Release/net8.0/MiddlewareCenter.Domain.deps.json
+/vercel/sandbox/src/MiddlewareCenter.Domain/bin/Release/net8.0/MiddlewareCenter.Domain.dll
+/vercel/sandbox/src/MiddlewareCenter.Domain/bin/Release/net8.0/MiddlewareCenter.Domain.pdb
+/vercel/sandbox/src/MiddlewareCenter.Domain/obj/Release/net8.0/MiddlewareCenter.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/vercel/sandbox/src/MiddlewareCenter.Domain/obj/Release/net8.0/MiddlewareCenter.Domain.AssemblyInfoInputs.cache
+/vercel/sandbox/src/MiddlewareCenter.Domain/obj/Release/net8.0/MiddlewareCenter.Domain.AssemblyInfo.cs
+/vercel/sandbox/src/MiddlewareCenter.Domain/obj/Release/net8.0/MiddlewareCenter.Domain.csproj.CoreCompileInputs.cache
+/vercel/sandbox/src/MiddlewareCenter.Domain/obj/Release/net8.0/MiddlewareCenter.Domain.dll
+/vercel/sandbox/src/MiddlewareCenter.Domain/obj/Release/net8.0/refint/MiddlewareCenter.Domain.dll
+/vercel/sandbox/src/MiddlewareCenter.Domain/obj/Release/net8.0/MiddlewareCenter.Domain.pdb
+/vercel/sandbox/src/MiddlewareCenter.Domain/obj/Release/net8.0/ref/MiddlewareCenter.Domain.dll

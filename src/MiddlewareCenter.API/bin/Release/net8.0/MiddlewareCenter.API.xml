@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MiddlewareCenter.API</name>
+    </assembly>
+    <members>
+        <member name="T:MiddlewareCenter.API.Controllers.ApiControllerBase">
+            <summary>
+            Base controller providing shared helpers for all API controllers.
+            </summary>
+        </member>
+        <member name="T:MiddlewareCenter.API.Controllers.v1.CourseraController">
+            <summary>
+            Coursera LMS integration endpoints.
+            </summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.CourseraController.GetCourses(System.Threading.CancellationToken)">
+            <summary>Gets all available courses.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.CourseraController.GetCourse(System.String,System.Threading.CancellationToken)">
+            <summary>Gets a course by ID.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.CourseraController.GetProgress(System.String,System.Threading.CancellationToken)">
+            <summary>Gets progress for a course.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.CourseraController.GetContent(System.String,System.Threading.CancellationToken)">
+            <summary>Gets course content/modules.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.CourseraController.GetQuizzes(System.String,System.Threading.CancellationToken)">
+            <summary>Gets quizzes for a course.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.CourseraController.SubmitQuiz(System.String,System.String,MiddlewareCenter.Application.DTOs.Coursera.QuizSubmission,System.Threading.CancellationToken)">
+            <summary>Submits a quiz attempt.</summary>
+        </member>
+        <member name="T:MiddlewareCenter.API.Controllers.v1.ErpController">
+            <summary>
+            ERP HR services integration endpoints.
+            </summary>
+        </member>
+        <member name="T:MiddlewareCenter.API.Controllers.v1.K2Controller">
+            <summary>
+            K2 Nintex (myMemo) workflow integration endpoints.
+            </summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.K2Controller.GetPendingMemos(System.Threading.CancellationToken)">
+            <summary>Gets all pending memos awaiting action.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.K2Controller.GetPendingMemosCount(System.Threading.CancellationToken)">
+            <summary>Gets the count of pending memos.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.K2Controller.GetMemo(System.Int32,System.Threading.CancellationToken)">
+            <summary>Gets a memo by ID.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.K2Controller.ApproveMemo(System.Int32,MiddlewareCenter.Application.DTOs.Common.MemoActionRequest,System.Threading.CancellationToken)">
+            <summary>Approves a memo.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.K2Controller.RejectMemo(System.Int32,MiddlewareCenter.Application.DTOs.Common.MemoActionRequest,System.Threading.CancellationToken)">
+            <summary>Rejects a memo.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.K2Controller.GetMemoHistory(System.Threading.CancellationToken)">
+            <summary>Gets memo action history.</summary>
+        </member>
+        <member name="T:MiddlewareCenter.API.Controllers.v1.ServiceDeskController">
+            <summary>
+            ManageEngine ServiceDesk integration endpoints.
+            </summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.ServiceDeskController.GetPendingTickets(System.Threading.CancellationToken)">
+            <summary>Gets all pending tickets awaiting approval.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.ServiceDeskController.GetPendingTicketsCount(System.Threading.CancellationToken)">
+            <summary>Gets the count of pending tickets.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.ServiceDeskController.GetTicket(System.Int32,System.Threading.CancellationToken)">
+            <summary>Gets a ticket by ID.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.ServiceDeskController.ApproveTicket(System.Int32,MiddlewareCenter.Application.DTOs.Common.TicketActionRequest,System.Threading.CancellationToken)">
+            <summary>Approves a service ticket.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.ServiceDeskController.RejectTicket(System.Int32,MiddlewareCenter.Application.DTOs.Common.TicketActionRequest,System.Threading.CancellationToken)">
+            <summary>Rejects a service ticket.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.ServiceDeskController.GetTicketHistory(System.Int32,System.Threading.CancellationToken)">
+            <summary>Gets ticket action history.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.ServiceDeskController.GetTickets(System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>Gets tickets with optional filtering.</summary>
+        </member>
+        <member name="T:MiddlewareCenter.API.Controllers.v1.SharePointController">
+            <summary>
+            SharePoint On-Premises integration endpoints.
+            </summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.SharePointController.GetSites(System.Threading.CancellationToken)">
+            <summary>Gets all SharePoint sites.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.SharePointController.GetLists(System.String,System.Threading.CancellationToken)">
+            <summary>Gets lists for a site.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.SharePointController.GetListItems(System.String,System.String,System.Threading.CancellationToken)">
+            <summary>Gets items from a list.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.SharePointController.CreateListItem(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)">
+            <summary>Creates a new list item.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.SharePointController.UpdateListItem(System.String,System.String,System.Int32,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)">
+            <summary>Updates an existing list item.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.SharePointController.DeleteListItem(System.String,System.String,System.Int32,System.Threading.CancellationToken)">
+            <summary>Deletes a list item.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.SharePointController.GetFiles(System.String,System.String,System.Threading.CancellationToken)">
+            <summary>Gets files in a folder.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.SharePointController.DownloadFile(System.String,System.String,System.Threading.CancellationToken)">
+            <summary>Downloads a file.</summary>
+        </member>
+        <member name="M:MiddlewareCenter.API.Controllers.v1.SharePointController.UploadFile(System.String,System.String,Microsoft.AspNetCore.Http.IFormFile,System.Threading.CancellationToken)">
+            <summary>Uploads a file.</summary>
+        </member>
+        <member name="T:MiddlewareCenter.API.Middleware.GlobalExceptionHandlingMiddleware">
+            <summary>
+            Catches all unhandled exceptions and returns a generic error response.
+            Detailed errors are logged internally only.
+            </summary>
+        </member>
+        <member name="T:MiddlewareCenter.API.Middleware.RequestResponseLoggingMiddleware">
+            <summary>
+            Logs all incoming requests and outgoing responses with timing information.
+            </summary>
+        </member>
+        <member name="T:MiddlewareCenter.API.Middleware.TransactionIdMiddleware">
+            <summary>
+            Assigns a unique transaction ID to every request and exposes it in the response header.
+            </summary>
+        </member>
+    </members>
+</doc>
